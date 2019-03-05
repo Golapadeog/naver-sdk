@@ -1,13 +1,13 @@
 {
   "name": "naver-sdk",
-  "version": "1.0.1",
+  "version": "2.0.0",
   "description": "Naver Cordova SDK Wrapper",
   "module": "index.js",
   "typings": "index.d.ts",
   "author": "raccoondev85",
   "license": "MIT",
   "peerDependencies": {
-    "@ionic-native/core": "^4.2.0",
+    "@ionic-native/core": "^5.0.0",
     "@angular/core": "*",
     "rxjs": "^5.0.1"
   },
