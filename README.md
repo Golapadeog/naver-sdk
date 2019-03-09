@@ -1,3 +1,4 @@
+
 # naver-sdk
 Naver Cordova SDK Plugin Wrapper (네이버 계정 연동 플러그인 Wrapper)
 link: https://github.com/raccoondev85/cordova-plugin-naver-sdk
@@ -5,11 +6,11 @@ link: https://github.com/raccoondev85/cordova-plugin-naver-sdk
 ## Development Environment and ETC
 |type|version
 |---|---
-|ionic (Ionic CLI)|3.19.1
-|cordova (Cordova CLI)|8.0.0
-|Cordova Platforms Android|6.4.0
+|ionic (Ionic CLI)|4.10.3
+|cordova (Cordova CLI)|8.1.2
+|Cordova Platforms Android|7.1.4
 |Cordova Platforms IOS|4.5.4
-|Ionic Framework|ionic-angular 3.9.2
+|Ionic Framework|ionic-angular 4.0.0
 |NaverThirdPartyLogin.framework(ios)|4.0.9
 |naveridlogin-android-sdk(android)|4.2.0
 
@@ -28,9 +29,9 @@ install wrapper for naver cordova sdk plugin to interface
 $ npm install --save naver-sdk
 ```
 
-then import __NaverCordovaSDK__ module into app.module.ts
+then import __NaverCordovaSDK__ module into app.module.ts. Make sure to import the injectable class from the `/ngx` directory as shown in the following examples:
 ```
-import { NaverCordovaSDK } from 'naver-sdk';
+import { NaverCordovaSDK } from 'naver-sdk/ngx';
 
 @NgModule({
   providers: [
