@@ -1,3 +1,6 @@
+import { Injectable } from '@angular/core';
+import { Cordova, IonicNativePlugin, Plugin } from '@ionic-native/core';
+
 var __extends = (this && this.__extends) || (function () {
     var extendStatics = Object.setPrototypeOf ||
         ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
@@ -17,8 +20,6 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-import { Cordova, IonicNativePlugin, Plugin } from '@ionic-native/core';
-import { Injectable } from '@angular/core';
 var NaverCordovaSDK = (function (_super) {
     __extends(NaverCordovaSDK, _super);
     function NaverCordovaSDK() {
@@ -85,4 +86,3 @@ var NaverCordovaSDK = (function (_super) {
     return NaverCordovaSDK;
 }(IonicNativePlugin));
 export { NaverCordovaSDK };
-//# sourceMappingURL=index.js.map
