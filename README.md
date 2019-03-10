@@ -32,7 +32,7 @@ then import __NaverCordovaSDK__ module into app.module.ts :
 ###  @ionic-native/core >= 5.x.x
 Make sure to import the injectable class from the `/ngx` directory as shown in the following examples:
 ```
-import { NaverCordovaSDK } from 'naver-sdk/ngx';
+import { NaverCordovaSDK } from 'naver-sdk-ngx/ngx';
 
 @NgModule({
   providers: [
@@ -42,7 +42,7 @@ import { NaverCordovaSDK } from 'naver-sdk/ngx';
 ```
 ###  @ionic-native/core < 5.x.x
 ```
-import { NaverCordovaSDK } from 'naver-sdk';
+import { NaverCordovaSDK } from 'naver-sdk-ngx';
 
 @NgModule({
 providers: [
