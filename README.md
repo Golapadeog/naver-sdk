@@ -1,3 +1,5 @@
+[![npm version](https://badge.fury.io/js/naver-sdk-ngx.svg)](https://badge.fury.io/js/naver-sdk-ngx)
+
 # naver-sdk
 Naver Cordova SDK Plugin Wrapper (네이버 계정 연동 플러그인 Wrapper)
 link: https://github.com/raccoondev85/cordova-plugin-naver-sdk
