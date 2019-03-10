@@ -1,10 +1,10 @@
 {
-  "name": "naver-sdk",
-  "version": "1.1.0",
+  "name": "naver-sdk-ngx",
+  "version": "1.2.0",
   "description": "Naver Cordova SDK Wrapper",
   "module": "index.js",
   "typings": "index.d.ts",
-  "author": "raccoondev85",
+  "author": "Golapadeog",
   "license": "MIT",
   "peerDependencies": {
     "@ionic-native/core": "^4.2.0",
@@ -13,13 +13,22 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/raccoondev85/naver-sdk.git"
+    "url": "git+https://github.com/Golapadeog/naver-sdk-ngx.git"
   },
   "keywords": [
     "ionic",
     "cordova",
     "naver",
     "naver-sdk",
-    "naveraccount"
-  ]
+    "naveraccount",
+    "naver-sdk-ngx"
+  ],
+  "bugs": {
+    "url": "https://github.com/Golapadeog/naver-sdk-ngx/issues"
+  },
+  "homepage": "https://github.com/Golapadeog/naver-sdk-ngx#readme",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
 }

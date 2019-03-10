@@ -1,4 +1,3 @@
-
 # naver-sdk
 Naver Cordova SDK Plugin Wrapper (네이버 계정 연동 플러그인 Wrapper)
 link: https://github.com/raccoondev85/cordova-plugin-naver-sdk
@@ -21,15 +20,17 @@ install cordova plugin
 // OAUTH_CLIENT_SECRET: client secret that you got assigned from naver development application you created
 // OAUTH_CLIENT_NAME: naver development application name
 // OAUTH_CLIENT_APP_SCHEME: app scheme that you registered in naver development application for ios
-$ cordova plugin add cordova-plugin-naver-sdk --variable OAUTH_CLIENT_ID=YOUR_CLIENT_ID --variable OAUTH_CLIENT_SECRET=YOUR_CLIENT_SECRET --variable OAUTH_CLIENT_NAME=YOUR_CLIENT_NAME --variable OAUTH_CLIENT_APP_SCHEME=YOUR_CLIENT_APP_SCHEME
+$ ionic cordova plugin add cordova-plugin-naver-sdk --variable OAUTH_CLIENT_ID=YOUR_CLIENT_ID --variable OAUTH_CLIENT_SECRET=YOUR_CLIENT_SECRET --variable OAUTH_CLIENT_NAME=YOUR_CLIENT_NAME --variable OAUTH_CLIENT_APP_SCHEME=YOUR_CLIENT_APP_SCHEME
 ```
 
 install wrapper for naver cordova sdk plugin to interface
 ```
-$ npm install --save naver-sdk
+$ npm install --save naver-sdk-ngx
 ```
 
-then import __NaverCordovaSDK__ module into app.module.ts. Make sure to import the injectable class from the `/ngx` directory as shown in the following examples:
+then import __NaverCordovaSDK__ module into app.module.ts :
+###  @ionic-native/core >= 5.x.x
+Make sure to import the injectable class from the `/ngx` directory as shown in the following examples:
 ```
 import { NaverCordovaSDK } from 'naver-sdk/ngx';
 
@@ -38,6 +39,17 @@ import { NaverCordovaSDK } from 'naver-sdk/ngx';
     NaverCordovaSDK
   ]
 })
+```
+###  @ionic-native/core < 5.x.x
+```
+import { NaverCordovaSDK } from 'naver-sdk';
+
+@NgModule({
+providers: [
+	NaverCordovaSDK
+	]
+})
+
 ```
 
 ## Methods
